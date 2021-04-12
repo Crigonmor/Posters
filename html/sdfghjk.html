@@ -18,13 +18,13 @@ div#wrapper{
   width: auto;
   height:auto;
   align-content: center;
-  grid-template-columns: repeat(3,170px)  ;
+  grid-template-columns: 170px 170px 170px;
   padding-top: 150px;
   grid-gap: 20%;
   row-gap: 50px;
   margin-bottom: 10px;
   justify-content: center;
-  grid-template-rows: repeat(5,280px);
+  grid-template-rows: 280px 280px 280px;
 }
 
 
@@ -46,7 +46,21 @@ div#grid{
 
 
 }
-#grid:hover{
+@media only screen and (max-width: 768px) {
+
+  #grid{background-color:green;
+    grid-template-columns: 170px 170px;
+}
+
+}
+
+
+@media only screen and (max-width: 512px) {
+
+  #wrapper{background-color:red;}
+
+}
+#wrapper:hover{
   filter: drop-shadow(16px 16px 10px black);
   transition:all 400ms ease-in-out;
 
