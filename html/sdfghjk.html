@@ -18,7 +18,7 @@ div#wrapper{
   width: auto;
   height:auto;
   align-content: center;
-  grid-template-columns: 170px 170px 170px;
+  grid-template-columns: 170px 170px 170px ;
   padding-top: 150px;
   grid-gap: 20%;
   row-gap: 50px;
@@ -48,8 +48,8 @@ div#grid{
 }
 @media only screen and (max-width: 768px) {
 
-  #grid{background-color:green;
-    grid-template-columns: 170px 170px;
+div#wrapper{
+    grid-template-columns: 170px 170px  ;
 }
 
 }
@@ -57,7 +57,8 @@ div#grid{
 
 @media only screen and (max-width: 512px) {
 
-  #wrapper{background-color:red;}
+  div#wrapper{
+  grid-template-columns: 170px }
 
 }
 #wrapper:hover{
